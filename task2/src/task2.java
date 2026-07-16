@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -7,6 +8,16 @@ public class task2 {
         if (args.length < 2) {
             System.out.println("Ошибка: нужно 2 аргумента: файл_эллирса файл_точек");
             return;
+        }
+
+        String[] inputFiles = {args[0], args[1]};
+        File file;
+        for (String fileName : inputFiles) {
+            file = new File(fileName);
+            if (!file.exists()) {
+                System.out.println("Ошибка файла " + fileName + " не найден!");
+                return;
+            }
         }
 
         String[] parts;

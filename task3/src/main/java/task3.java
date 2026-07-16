@@ -50,6 +50,18 @@ public class task3 {
             return;
         }
 
+        File file;
+
+        String[] inputFiles = {args[0], args[1]};
+
+        for (String fileName : inputFiles) {
+            file = new File(fileName);
+            if (!file.exists()) {
+                System.out.println("Ошибка файла " + fileName + " не найден!");
+                return;
+            }
+        }
+
         ObjectMapper mapper = new ObjectMapper();
 
         JsonNode valueFile = mapper.readTree(new File(args[0]));
