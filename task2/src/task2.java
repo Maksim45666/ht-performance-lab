@@ -41,7 +41,7 @@ public class task2 {
             }
 
             if (centerLine == null) {
-                System.out.println("Ошибка: файл + " + args[0] + " не содержит данных!" );
+                System.out.println("Ошибка: файл " + args[0] + " не содержит данных!" );
                 return;
             }
             String[] center = centerLine.trim().split(" ");
@@ -59,7 +59,7 @@ public class task2 {
             }
 
             if (radiusLine == null) {
-                System.out.println("Ошибка: файл + " + args[0] + " не содержит строки с радиусом!" );
+                System.out.println("Ошибка: файл " + args[0] + " не содержит строки с радиусом!" );
                 return;
             }
 
