@@ -15,7 +15,7 @@ public class task2 {
         for (String fileName : inputFiles) {
             file = new File(fileName);
             if (!file.exists()) {
-                System.out.println("Ошибка файла " + fileName + " не найден!");
+                System.out.println("Ошибка: файл " + fileName + " не найден!");
                 return;
             }
         }

@@ -9,7 +9,7 @@ import java.util.List;
 public class task4 {
     public static void main(String[] args) {
         if (args.length < 1) {
-            System.out.println("Ощибка: нужно указать путь к файлу.");
+            System.out.println("Ошибка: нужно указать путь к файлу.");
             return;
         }
 
